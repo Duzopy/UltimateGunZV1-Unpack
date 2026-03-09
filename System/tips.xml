@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML>
+    <!-- -  category
+            default = 0 
+            0 - ??
+            1 - ??? 
+            2 - ?? 
+            3 - ??? 
+            4 - ??? 
+            5 - ??
+            6 - ??
+            7 - ??
+    -->
+    <!-- MSG??? id? ??? ???? ??? ??? ??? ?????. -->
+    
+<TIPS category="0">
+    <!-- STATIC TIPS -->
+	<MSG>Knight Gunz é um jogo de ação em que você precisa testar seus limites.</MSG>
+	<MSG>Aperte F11 para começar a gravar uma partida. Pare de gravar, apertando F11 novamente.</MSG>
+	<MSG>Você compartilha sua conexão? Experimente a função de encaminhamento de porta.</MSG>
+	<MSG>www.knightgunz.com                  www.knightgunz.com</MSG>
+	<MSG>Você está com LAG ? Entre nas opções e escolha Otimizar.</MSG>
+	<MSG>KnightGunZ v3, sua diversão começa aqui, jogue e chame seus amigos.</MSG>
+	<MSG>Nenhum membro da equipe Knight GunZ pedirá a sua senha, portanto não passe ela para ninguém.</MSG>
+	<MSG>Cuidado, SWAP é proibido, não faça SWAP, caso algum GM pegue, você será resetado na mesma hora.</MSG>
+	<MSG>Itens de recompensa não são compartilhados com outros personagens através do Banco.</MSG>
+	<MSG>O modo de treinamento não altera sua pontuação.</MSG>
+	<MSG>KnightGunz Doação, donate e ajude nosso servidor a ficar sempre online.</MSG>
+	<MSG>Qualquer palavra que possa ofender outras pessoas será blockiada.</MSG>
+	<MSG>Cuidado, não ofenda nenhum jogador, pois você corre um serio risco de perder sua conta.</MSG>
+	<MSG>Atenção: A lista da EQUIPE Knight GunZ está no site, portanto não acredite em terceiros.</MSG>
+	<MSG>Você já jogou uma Guerra de Clãs? Então chame seus amigos e jogue agora.</MSG>
+	<MSG>Em uma Guerra de Clãs você ganha 1,5X a Exp. normal.</MSG>
+
+	<MSG>Aperte Ctrl+Número enquanto observa uma partida para ter aquele número definido e para ver o jogador relacionado.</MSG>
+	<MSG>Você já jogou uma Guerra de Clãs? Então chame seus amigos e jogue agora.</MSG>
+	<MSG>Em uma Guerra de Clãs você ganha 1,5X a Exp. normal.</MSG>
+</TIPS>    
+
+<!-- ??? -->
+<TIPS category="4">
+<!--	<MSG id="1">Aperte F1 enquanto estiver no jogo, para ver a descrição das teclas.</MSG> -->
+</TIPS>
+
+</XML>

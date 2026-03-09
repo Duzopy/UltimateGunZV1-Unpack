@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Login">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+
+	Login:
+		Windows Vista
+
+
+	Created by:
+		Styx
+
+
+	Programs used:
+		Photoshop CS4 - Graphic Design + X/Y W/H Information
+		Notepad - XML work
+
+	Need to search for the custom items? Search for "[Carbon]" tags
+
+-->
+
+
+<!-- 프레임 생성 : Login -->
+	<FRAME item="Login">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+<!-- Picture : 배경 이미지 -->
+	<PICTURE item="Login_BackgrdImg" parent="Login">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+
+<!-- 
+[Carbon] 
+Login Picture 
+-->
+
+	<PICTURE item="Carbon_LoginImage" parent="Login">
+		<BOUNDS>
+			<X>197</X>
+			<Y>312</Y>
+			<W>424</W>
+			<H>179</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Duality_Loginframe.png</BITMAP>
+	</PICTURE>
+
+
+<!-- LABEL : 연결중 -->
+	<LABEL item="Login_ConnectingMsg" parent="Login">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR>
+			<R>194</R>
+			<G>152</G>
+			<B>122</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>200</X>
+			<Y>300</Y>
+			<W>400</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>Connecting</TEXT>
+	</LABEL>
+
+
+<!-- 프레임 생성 : LoginFrame -->
+	<FRAME item="LoginFrame" parent="Login">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>100</X>
+			<Y>60</Y>
+			<W>404</W>
+			<H>250</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+
+
+<!-- 서버 선택 -->
+	<!-- SERVERVIEW : 서버 선택 -->
+	<SERVERVIEW item="SelectedServer" parent="Login">
+		<BOUNDS>
+			<X>227</X>
+			<Y>404</Y>
+			<W>220</W>
+			<H>120</H>
+		</BOUNDS>
+	</SERVERVIEW>
+	
+	
+
+
+<!-- 
+[Carbon] 
+Enter Username 
+-->
+
+
+	<!-- LISTBOX : 뒷배경용 -->
+	<LISTBOX item="nulllistbox" parent="Login">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>231</X>
+			<Y>363</Y>
+			<W>105</W>
+			<H>22</H>
+		</BOUNDS>
+		<ENABLE>FALSE</ENABLE>
+	</LISTBOX>
+	<LISTBOX item="nulllistbox" parent="Login">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>231</X>
+			<Y>363</Y>
+			<W>105</W>
+			<H>22</H>
+		</BOUNDS>
+		<ENABLE>FALSE</ENABLE>
+	</LISTBOX>
+
+	<!-- Edit : 아이디 입력창 -->
+	<EDIT item="LoginID" parent="Login">
+		<EDITLOOK>NormalEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>231</X>
+			<Y>363</Y>
+			<W>105</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>194</R>
+			<G>152</G>
+			<B>122</B>
+		</TEXTCOLOR>
+		<TEXT>UserID..</TEXT>
+	</EDIT>
+
+
+	<!-- LISTBOX : 뒷배경용 -->
+	<LISTBOX item="nulllistbox" parent="Login">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>357</X>
+			<Y>363</Y>
+			<W>105</W>
+			<H>22</H>
+		</BOUNDS>
+		<ENABLE>FALSE</ENABLE>
+	</LISTBOX>
+	<LISTBOX item="nulllistbox" parent="Login">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>357</X>
+			<Y>363</Y>
+			<W>105</W>
+			<H>22</H>
+		</BOUNDS>
+		<ENABLE>FALSE</ENABLE>
+	</LISTBOX>
+
+	<!-- Edit : 비밀번호 입력창 -->
+	<EDIT item="LoginPassword" parent="Login">
+		<EDITLOOK>NormalEditLook</EDITLOOK>
+		<PASSWORD>true</PASSWORD>
+		<BOUNDS>
+			<X>357</X>
+			<Y>363</Y>
+			<W>105</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>194</R>
+			<G>152</G>
+			<B>122</B>
+		</TEXTCOLOR>
+		<TEXT>Password..</TEXT>
+	</EDIT>
+
+
+<!-- Label : 로그인 에러 -->
+	<LABEL item="LoginError" parent="LoginFrame">
+		<TEXTCOLOR>
+			<R>194</R>
+			<G>152</G>
+			<B>122</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>28</X>
+			<Y>151</Y>
+			<W>200</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	
+	
+	
+<!--
+[Carbon] 
+Fake 'dummy' button so the enter button will let you login
+(DEFAULTKEY doesn't work with BMBUTTONs..) Thanks to Koreans/Tim for this idea.
+-->
+	<!-- Button : 로그인 버튼 -->
+	<BUTTON item="LoginOK" parent="LoginFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</BOUNDS>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<FOCUSABLE>FALSE</FOCUSABLE>
+	</BUTTON>
+
+
+
+<!-- 
+[Carbon] 
+Login Button 
+-->
+	<BMBUTTON item="LoginOK" parent="Login">
+		<BOUNDS>
+			<X>490</X>
+			<Y>362</Y>
+			<W>108</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">Duality_LoginButton.png</BITMAP>
+		<BITMAP type="over">Duality_LoginButton_Pick.png</BITMAP>
+		<BITMAP type="down">Duality_LoginButton_Pick.png</BITMAP>
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+		<FOCUSABLE>FALSE</FOCUSABLE>
+	</BMBUTTON>
+	
+	
+	
+<!-- BMBUTTON : 종료 버튼 -->
+	<BMBUTTON item="Exit" parent="Login">
+		<BOUNDS>
+			<X>510</X>
+			<Y>332</Y>
+			<W>70</W>
+			<H>17</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">Duality_Exit.png</BITMAP>
+		<BITMAP type="over">Duality_Exit.png</BITMAP>
+		<BITMAP type="down">Duality_Exit.png</BITMAP>
+		<CONFIRMMESSAGE>STR:UI_LOGIN_05</CONFIRMMESSAGE> <!-- Do you want to quit the game? -->
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+		<FOCUSABLE>FALSE</FOCUSABLE>
+	</BMBUTTON>		
+	
+
+
+
+	
+<!-- 서버 IP 설정 -->
+	<!-- Label : 서버 IP -->
+	<LABEL item="LabelServerIP" parent="LoginFrame">
+		<BOUNDS>
+			<X>130</X>
+			<Y>202</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Debug Server</TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+
+	<!-- Edit : IP 주소 입력창 -->
+	<EDIT item="ServerAddress" parent="LoginFrame">
+		<EDITLOOK>NormalEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>215</X>
+			<Y>202</Y>
+			<W>110</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<VISIBLE>false</VISIBLE>
+	</EDIT>
+
+	<!-- Edit : IP 포트 입력창 -->
+	<EDIT item="ServerPort" parent="LoginFrame">
+		<EDITLOOK>NormalEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>330</X>
+			<Y>202</Y>
+			<W>45</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<VISIBLE>false</VISIBLE>
+	</EDIT>
+</XML>
